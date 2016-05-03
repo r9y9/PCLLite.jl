@@ -40,7 +40,7 @@ using CxxStd
 
 macro timevb(expr)
     if VERBOSE
-        return Expr(:macrocall, symbol("@time"), expr)
+        return Expr(:macrocall, Symbol("@time"), expr)
     else
         return expr
     end
